@@ -17,7 +17,7 @@ const Header = () => {
       <Conteinar>
         <div className="flex justify-between">
           <div className="">
-            <Images imgSrc={Logo} className={''}/>
+           <Link to={'/'}><Images imgSrc={Logo} className={''}/></Link>
           </div>
           <div className="pt-6 ">
             <ul className="flex gap-x-15">
