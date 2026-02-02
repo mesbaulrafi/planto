@@ -1,10 +1,17 @@
 import React from 'react'
+import Conteinar from '../Conteinar'
+
+
 
 const Benner = () => {
   return (
-  <footer>
-  <div className="bg-emerald-400 h-50"></div>
-  </footer>
+    <>
+    <div className="bg-[url('/src/assets/bg_home.png')] bg-center bg-no-repeat py-100">
+      <Conteinar>
+        <div className=""></div>
+      </Conteinar>
+    </div>
+    </>
   )
 }
 
