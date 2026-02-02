@@ -13,7 +13,7 @@ import { BsListNested } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="py-7">
+    <header className="py-7">
       <Conteinar>
         <div className="flex justify-between">
           <div className="">
@@ -36,7 +36,7 @@ const Header = () => {
           </div>
         </div>
       </Conteinar>
-    </div>
+    </header>
   );
 };
 
