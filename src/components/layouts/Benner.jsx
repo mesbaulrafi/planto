@@ -85,6 +85,10 @@ const Benner = () => {
          <div className="">
           <Buttomproduct productImg={Tree3} productTitle={'For Small Decs Ai Plat'} productDesription={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  ut labore et dolore magna aliqua'} productPrice={'Rs. 599/-'}/>
          </div>
+
+         <div className="">
+          <Product productImg={Tree1}/>
+         </div>
         </Conteinar>
       </div>
     </>
