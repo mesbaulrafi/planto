@@ -7,8 +7,10 @@ import Tree1 from "/src/assets/tree1.png";
 import Start from "/src/assets/Start.png";
 import PlayBtn from "/src/assets/playBtn.png";
 import { Link } from "react-router-dom";
-import Blurdiv from "../../Blurdiv";
+import Blurdiv from "../Blurdiv";
 import { FaAngleRight } from "react-icons/fa6";
+
+
 
 const Benner = () => {
   return (
