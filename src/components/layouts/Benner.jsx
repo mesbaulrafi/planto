@@ -34,7 +34,7 @@ const Benner = () => {
           {/* text top End */}
           <div className="flex justify-between mb-48">
             {/* Review Start */}
-            <div className="mt-61.5 w-[409px] border-2 border-white/10  py-11 px-9 rounded-[45px] bg-white/5 backdrop-blur-md ">
+            <div className="mt-60 w-[409px] border-2 border-white/10  py-11 px-9 rounded-[45px] bg-white/5 backdrop-blur-md ">
               <div className="flex items-center gap-x-7 pb-7.5">
                 <Images imgSrc={ReveiwOne} />
                 <div className="">
