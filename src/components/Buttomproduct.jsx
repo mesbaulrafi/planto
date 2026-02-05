@@ -6,7 +6,7 @@ import { IoBagHandleSharp } from "react-icons/io5";
 const Buttomproduct = ({productImg,productTitle,productDesription,productPrice,}) => {
   return (
     <>
-      <div className="my-5 px-28 border-2 border-white/10  p-8 rounded-[151px] bg-white/5 backdrop-blur-[5px]">
+      <div className="my-5 px-28 border-2 border-white/10  p-8 rounded-[151px] bg-white/5 backdrop-blur-md">
         <div className="">
           <div className="py-10">
             <h4 className="text-[38px] font-semibold">{productTitle}</h4>
