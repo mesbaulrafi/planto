@@ -11,11 +11,11 @@ const Trendyplants = () => {
       <Conteinar>
         <div className="mb-40">
           {/* Text Part  */}
-          <div className="text-center mb-20 flex justify-center">
+          <div className="text-center mb-30 flex justify-center">
             <div className="relative inline-block">
               <div className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-[#abffb369] rounded-tr-[20px]"></div>
-              <div className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-[#abffb369] rounded-bl-[20px]"></div>
-              <h2 className="text-[55px] font-semibold px-4 ">
+              <div className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-[#abffb3aa] rounded-bl-[20px]"></div>
+              <h2 className="text-[55px] font-semibold px-5 ">
                 Our Trendy plants
               </h2>
             </div>
