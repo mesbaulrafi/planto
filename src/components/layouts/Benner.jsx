@@ -52,11 +52,11 @@ const Benner = () => {
             {/* Review End */}
             {/* Product Top Stert */}
             <div className="w-[400px] ">
-              <Blurdiv className={"pt-50"}>
+              <Blurdiv className={"pt-75"}>
                 <div className="pl-8 ">
                   <Images
                     imgSrc={Tree1}
-                    className={"absolute bottom-23 right-4"}
+                    className={"absolute bottom-57 right-4"}
                   />
                   <p className="text-2xl font-light opacity-75">
                     Trendy House Plant
