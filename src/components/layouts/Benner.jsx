@@ -56,7 +56,7 @@ const Benner = () => {
                 <div className="pl-8 ">
                   <Images
                     imgSrc={Tree1}
-                    className={"absolute bottom-58 right-4"}
+                    className={"absolute bottom-57 right-4"}
                   />
                   <p className="text-2xl font-light opacity-75">
                     Trendy House Plant
