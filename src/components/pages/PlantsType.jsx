@@ -88,7 +88,6 @@ const PlantsType = () => {
                 />
               </div>
               {/* Fast row End  */}
-
               <div className="flex items-center justify-between">
                 {/* p1 */}
                 <Product
