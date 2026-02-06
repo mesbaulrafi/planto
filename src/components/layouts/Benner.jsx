@@ -34,7 +34,7 @@ const Benner = () => {
             </div>
           </div>
           {/* text top End */}
-          <div className="flex justify-between mb-48">
+          <div className="flex justify-between mb-20">
             {/* Review Start */}
             <div className="mt-60 w-[409px] border-2 border-white/10  py-11 px-9 rounded-[45px] bg-white/5 backdrop-blur-md ">
               <div className="flex items-center gap-x-7 pb-7.5">
@@ -51,12 +51,12 @@ const Benner = () => {
             </div>
             {/* Review End */}
             {/* Product Top Stert */}
-            <div className="w-[400px] ">
-              <Blurdiv className={"pt-75"}>
+            <div className="w-[370px] ">
+              <Blurdiv className={"pt-76"}>
                 <div className="pl-8 ">
                   <Images
                     imgSrc={Tree1}
-                    className={"absolute bottom-57 right-4"}
+                    className={"absolute bottom-60 right-4"}
                   />
                   <p className="text-2xl font-light opacity-75">
                     Trendy House Plant

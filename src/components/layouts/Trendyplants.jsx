@@ -24,7 +24,7 @@ const Trendyplants = () => {
           <Topproduct
             productImg={Tree2}
             productTitle={"For Small Decs Ai Plat"}
-            productDesription={"Lorem ipsum dolor sit amet..."}
+            productDesription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}
             productPrice={"Rs. 599/-"}
           />
         </div>
@@ -33,7 +33,7 @@ const Trendyplants = () => {
           <Buttomproduct
             productImg={Tree3}
             productTitle={"For Small Decs Ai Plat"}
-            productDesription={"Lorem ipsum dolor sit amet..."}
+            productDesription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}
             productPrice={"Rs. 599/-"}
           />
         </div>

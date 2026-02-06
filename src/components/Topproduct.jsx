@@ -14,14 +14,14 @@ const Topproduct = ({
     <>
       <Conteinar>
         <div className="my-5 border-2 border-white/10  p-8 rounded-[151px] bg-white/5 backdrop-blur-[5px] ">
-          <div className="flex justify-between relative">
+          <div className="flex justify-end relative">
             <div className="">
               <Images
                 imgSrc={productImg}
-                className={"absolute bottom-[-100px] left-[-60px] h-[700px]"}
+                className={"absolute bottom-10 left-0 "}
               />
             </div>
-            <div className="py-10">
+            <div className="py-20">
               <h4 className="text-[38px] font-semibold">{productTitle}</h4>
               <p className="text-[20px] w-[700px] py-6">{productDesription}</p>
               <p className="text-[38px] font-semibold pb-6">{productPrice}</p>

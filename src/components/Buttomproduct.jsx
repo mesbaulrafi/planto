@@ -8,7 +8,7 @@ const Buttomproduct = ({productImg,productTitle,productDesription,productPrice,}
     <>
       <div className="my-5 px-28 border-2 border-white/10  p-8 rounded-[151px] bg-white/5 backdrop-blur-md">
         <div className="">
-          <div className="py-10">
+          <div className="py-20">
             <h4 className="text-[38px] font-semibold">{productTitle}</h4>
             <p className="text-[20px] w-[700px] py-6">{productDesription}</p>
             <p className="text-[38px] font-semibold pb-6">{productPrice}</p>
@@ -22,7 +22,7 @@ const Buttomproduct = ({productImg,productTitle,productDesription,productPrice,}
             </div>
           </div>
           <div className="">
-            <Images imgSrc={productImg} className={'absolute bottom-[-100px] right-0 h-[700px]'}/>
+            <Images imgSrc={productImg} className={'absolute bottom-10 right-20 '}/>
           </div>
         </div>
       </div>
