@@ -56,7 +56,7 @@ const PlantsType = () => {
             {/* Product Details End */}
 
             {/* Top Selling Product Part  */}
-            <div className="py-60">
+            <div className="py-40">
               {/* Fast Row  */}
               <div className="flex items-center justify-between">
                 {/* p1 */}
