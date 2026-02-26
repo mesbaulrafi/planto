@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="">
             <h4 className='pb-12 text-2xl font-extrabold  text-white'>For Every Update.</h4>
           <div className="flex items-center justify-between border border-white rounded-lg p-1.5  max-w-[450px]">
-            <input type="text" name="" id="" placeholder='Enter Email' className='bg-transparent text-white outline-none '  />
+            <input type="text" name="" id="" placeholder='Enter Email' className='bg-transparent text-white outline-none p-2'  />
             <Button btnText={'SUBSCRIBE'} className={'bg-white text-black! font-bold text-sm rounded-lg '}/>
           </div>
           <div className=""><p className='text-2xl font-light text-white pt-50'>planto © all right reserve</p>
