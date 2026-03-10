@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Error from "./components/pages/Error";
+import PlantsType from "./components/pages/PlantsType";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<RootLayouts />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/plantsType" element={<PlantsType />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

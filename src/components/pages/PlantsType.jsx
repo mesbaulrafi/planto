@@ -1,6 +1,5 @@
 import React from "react";
 import Conteinar from "../Conteinar";
-import Blurdiv from "../Blurdiv";
 import Images from "../Images";
 import PlTree1 from "/src/assets/plTee1.png";
 import Button from "../Button";

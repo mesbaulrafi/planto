@@ -21,8 +21,8 @@ const Header = () => {
           </div>
           <div className="pt-6 ">
             <ul className="flex gap-x-15">
-              <Link to={''}><li className="text-2xl font-medium text-white opacity-80 hover:text-emerald-400">Home</li></Link>
-              <Link to={''}><li className="text-2xl font-medium text-white opacity-80 hover:text-emerald-400">Plants Type</li></Link>
+              <Link to={'/'}><li className="text-2xl font-medium text-white opacity-80 hover:text-emerald-400">Home</li></Link>
+              <Link to={'/PlantsType'}><li className="text-2xl font-medium text-white opacity-80 hover:text-emerald-400">Plants Type</li></Link>
               <Link to={''}><li className="text-2xl font-medium text-white opacity-80 hover:text-emerald-400">More</li></Link>
               <Link to={''}><li className="text-2xl font-medium text-white opacity-80 hover:text-emerald-400">Contact</li></Link>
             </ul>
