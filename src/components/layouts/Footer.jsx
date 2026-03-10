@@ -3,6 +3,7 @@ import Conteinar from '../Conteinar'
 import Images from '../Images'
 import FooterLogo from '/src/assets/footerLogo.png'
 import Button from '../Button'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -23,9 +24,9 @@ const Footer = () => {
         <div className="">
           <h4 className='pb-12 text-2xl font-extrabold  text-white'>Quick Link’s</h4>
           <ul>
-            <li className='text-2xl  text-white pb-6.5'>Home</li>
+            <Link to={'/'}><li className='text-2xl  text-white pb-6.5'>Home</li></Link>
             <li className='text-2xl  text-white pb-6.5'>Type’s Of plant’s</li>
-            <li className='text-2xl  text-white pb-6.5'>Contact</li>
+            <Link to={'/contact'}><li className='text-2xl  text-white pb-6.5'>Contact</li></Link>
             <li className='text-2xl  text-white'>Privacy</li>
           </ul>
         </div>
