@@ -27,7 +27,7 @@ const Footer = () => {
             <Link to={'/'}><li className='text-2xl  text-white pb-6.5'>Home</li></Link>
             <li className='text-2xl  text-white pb-6.5'>Type’s Of plant’s</li>
             <Link to={'/contact'}><li className='text-2xl  text-white pb-6.5'>Contact</li></Link>
-            <li className='text-2xl  text-white'>Privacy</li>
+            <Link to={'/Privacy'}><li className='text-2xl  text-white'>Privacy</li></Link>
           </ul>
         </div>
         {/* 3 */}
