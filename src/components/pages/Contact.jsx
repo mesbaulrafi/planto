@@ -16,26 +16,26 @@ const Contact = () => {
           <input 
             type="text" 
             placeholder='Name' 
-            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[20px] text-white placeholder:text-gray-400"
+            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[20px] text-white placeholder:[#a0a29e]"
           />
           
           {/* Email Input */}
           <input 
             type="email" 
             placeholder='Email' 
-            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[20px] text-white placeholder:text-gray-400"
+            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[20px] text-white placeholder:[#a0a29e]"
           />
           
           {/* Message Textarea */}
           <textarea 
             placeholder='Message' 
             rows="6"
-            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[25px] text-white placeholder:text-gray-400 resize-none"
+            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[25px] text-white placeholder:[#a0a29e] resize-none"
           ></textarea>
           
           {/* Submit Button Centering */}
           <div className="flex justify-center mt-2">
-             <Button btnText={'Submit'} className="bg-[#3d423d] hover:bg-[#4a504a] text-white px-12 py-3 rounded-full transition-all font-medium" />
+             <button className=' text-white text-4xl font-bold rounded-[40px] bg-white/5 backdrop-blur-[5px] py-4 px-[70px]'>Submit</button>
           </div>
         </Blurdiv>
       </div>
