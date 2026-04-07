@@ -35,7 +35,7 @@ const Contact = () => {
           
           {/* Submit Button Centering */}
           <div className="flex justify-center mt-2">
-             <button className=' text-white text-4xl font-bold rounded-[40px] bg-white/5 backdrop-blur-[5px] py-4 px-[70px]'>Submit</button>
+             <button className='bg-[#373d32] text-white text-4xl font-bold rounded-[40px]  backdrop-blur-[5px] py-4 px-[70px]'>Submit</button>
           </div>
         </Blurdiv>
       </div>
