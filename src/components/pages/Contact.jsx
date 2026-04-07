@@ -16,21 +16,21 @@ const Contact = () => {
           <input 
             type="text" 
             placeholder='Name' 
-            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[20px] text-white placeholder:[#a0a29e]"
+            className="w-full bg-[#5e635b] border-none outline-none p-4 rounded-[20px] text-white placeholder:[#a0a29e]"
           />
           
           {/* Email Input */}
           <input 
             type="email" 
             placeholder='Email' 
-            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[20px] text-white placeholder:[#a0a29e]"
+            className="w-full bg-[#5e635b] border-none outline-none p-4 rounded-[20px] text-white placeholder:[#a0a29e]"
           />
           
           {/* Message Textarea */}
           <textarea 
             placeholder='Message' 
             rows="6"
-            className="w-full bg-[#3d423d] border-none outline-none p-4 rounded-[25px] text-white placeholder:[#a0a29e] resize-none"
+            className="w-full bg-[#3d4339] border-none outline-none p-4 rounded-[25px] text-white placeholder:[#a0a29e] resize-none"
           ></textarea>
           
           {/* Submit Button Centering */}
