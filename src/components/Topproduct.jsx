@@ -2,7 +2,7 @@ import React from "react";
 import Images from "./Images";
 import Button from "./Button";
 import { IoBagHandleSharp } from "react-icons/io5";
-import Conteinar from "./Conteinar";
+import Container from "./Container";
 
 const Topproduct = ({
   productImg,
@@ -12,7 +12,7 @@ const Topproduct = ({
 }) => {
   return (
     <>
-      <Conteinar>
+      <Container>
         <div className="my-5 border-2 border-white/10  p-8 rounded-[151px] bg-white/5 backdrop-blur-[5px] ">
           <div className="flex justify-end relative">
             <div className="">
@@ -36,7 +36,7 @@ const Topproduct = ({
             </div>
           </div>
         </div>
-      </Conteinar>
+      </Container>
     </>
   );
 };
