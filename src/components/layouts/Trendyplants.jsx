@@ -1,5 +1,5 @@
 import React from "react";
-import Conteinar from "../Conteinar";
+import Container from "../Container";
 import Topproduct from "../Topproduct";
 import Tree2 from "/src/assets/tree2.png";
 import Tree3 from "/src/assets/tree3.png";
@@ -8,7 +8,7 @@ import Buttomproduct from "../Buttomproduct";
 const Trendyplants = () => {
   return (
     <>
-      <Conteinar>
+      <Container>
         <div className="mb-40">
           {/* Text Part  */}
           <div className="text-center mb-30 flex justify-center">
@@ -37,7 +37,7 @@ const Trendyplants = () => {
             productPrice={"Rs. 599/-"}
           />
         </div>
-      </Conteinar>
+      </Container>
     </>
   );
 };

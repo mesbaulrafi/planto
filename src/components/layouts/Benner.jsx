@@ -1,5 +1,5 @@
 import React from "react";
-import Conteinar from "../Conteinar";
+import Container from "../Container";
 import Button from "../Button";
 import Images from "../Images";
 import ReveiwOne from "/src/assets/reviewImg1.png";
@@ -16,7 +16,7 @@ const Benner = () => {
   return (
     <>
       <div className="">
-        <Conteinar>
+        <Container>
           {/* Text Top */}
           <div className="">
             <h1 className="text-[118px] text-[#c6c8c5] font-semibold">
@@ -71,7 +71,7 @@ const Benner = () => {
             </div>
             {/* Product Top End */}
           </div>
-        </Conteinar>
+        </Container>
       </div>
     </>
   );

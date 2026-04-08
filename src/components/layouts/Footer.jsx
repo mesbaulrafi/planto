@@ -1,5 +1,5 @@
 import React from 'react'
-import Conteinar from '../Conteinar'
+import Container from '../Container'
 import Images from '../Images'
 import FooterLogo from '/src/assets/footerLogo.png'
 import Button from '../Button'
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className='py-10'>
-    <Conteinar className="">
+    <Container className="">
       <div className="flex justify-between">
         {/* 1 */}
         <div className="">
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </Conteinar>
+    </Container>
     </footer>
   )
 }

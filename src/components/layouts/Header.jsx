@@ -1,7 +1,7 @@
 import React from "react";
 import Images from "../Images";
 import Logo from "/src/assets/Logo.png";
-import Conteinar from "../Conteinar";
+import Container from "../Container";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { IoBagHandleOutline } from "react-icons/io5";
@@ -14,7 +14,7 @@ import { BsListNested } from "react-icons/bs";
 const Header = () => {
   return (
     <header className="py-7">
-      <Conteinar>
+      <Container>
         <div className="flex justify-between">
           <div className="">
            <Link to={'/'}><Images imgSrc={Logo} className={''}/></Link>
@@ -35,7 +35,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </Conteinar>
+      </Container>
     </header>
   );
 };

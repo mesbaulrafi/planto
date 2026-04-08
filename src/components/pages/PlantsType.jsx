@@ -1,5 +1,5 @@
 import React from "react";
-import Conteinar from "../Conteinar";
+import Container from "../Container";
 import Images from "../Images";
 import PlTree1 from "/src/assets/plTee1.png";
 import Button from "../Button";
@@ -14,7 +14,7 @@ import PT6 from "/src/assets/pt6.png";
 const PlantsType = () => {
   return (
     <>
-      <Conteinar className={"py-10"}>
+      <Container className={"py-10"}>
         <div className="">
           {/* Our Top Selling  Hedding */}
           <div className="py-17.5 text-center  flex justify-center">
@@ -120,7 +120,7 @@ const PlantsType = () => {
             {/* Top Selling Product Part  */}
           </div>
         </div>
-      </Conteinar>
+      </Container>
     </>
   );
 };
