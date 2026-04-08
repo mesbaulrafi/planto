@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { BsListNested } from "react-icons/bs";
-import { RxCross2 } from "react-icons/rx"; // Menu close korar icon (Optional kintu bhalo)
+
+
 
 const Header = () => {
-  // Mobile menu toggle korar state
+  // Mobile menu toggle 
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
@@ -31,7 +32,7 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation (Visible only on lg and up) */}
+          {/* Desktop Navigation */}
           <nav className="hidden lg:block">
             <ul className="flex gap-x-15">
               {navLinks.map((link, index) => (
@@ -49,7 +50,6 @@ const Header = () => {
 
           {/* Icons Section */}
           <div className="flex items-center gap-x-6 lg:gap-x-15">
-            {/* Search & Bag - Hidden on Mobile/Tablet, Visible on LG */}
             <button className="hidden lg:block text-white text-3xl font-bold hover:text-emerald-300 transition-colors">
               <CiSearch />
             </button>
@@ -57,12 +57,12 @@ const Header = () => {
               <IoBagHandleOutline />
             </button>
             
-            {/* Mobile Menu Toggle Icon (Hidden on LG) */}
+            {/* Mobile Menu Toggle  */}
             <button 
               onClick={() => setIsOpen(!isOpen)}
               className="lg:hidden text-white text-3xl font-bold hover:text-emerald-300 transition-all z-50"
             >
-              {isOpen ? <RxCross2 /> : <BsListNested />}
+              {isOpen ? <BsListNested /> : <BsListNested />}
             </button>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Header = () => {
               </li>
             ))}
             
-            {/* Mobile View te Search ar Bag jodi chao ekhane rakhte paro, nile bad dite paro */}
+            
             <div className="flex gap-x-10 justify-center mt-6 text-white text-3xl">
                <CiSearch onClick={() => setIsOpen(false)} />
                <IoBagHandleOutline onClick={() => setIsOpen(false)} />
