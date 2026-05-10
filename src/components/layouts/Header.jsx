@@ -21,7 +21,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="py-7 relative bg-transparent w-full z-50">
+    <header className="py-7 fixed bg-transparent w-full z-50">
       <Container>
         <div className="flex justify-between items-center">
           

@@ -1,13 +1,13 @@
 import React from 'react'
-import BennerTow from './BennerTow'
-import PlantsType from './PlantsType'
+// import BennerTow from './BennerTow'
+// import PlantsType from './PlantsType'
+import Benner from '../layouts/Benner'
 
 
 const Home = () => {
   return (
    <>
-   <BennerTow/>
-   <PlantsType/>
+   <Benner/>
    
    </>
   )
