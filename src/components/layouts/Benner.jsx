@@ -14,28 +14,30 @@ import Tree2 from "/src/assets/tree2.png";
 import Tree3 from "/src/assets/tree3.png";
 import Start from "/src/assets/Start.png";
 import PlayBtn from "/src/assets/playBtn.png";
-import PlTee1 from "/src/assets/plTee1.png";
 
 
-//  Topproduct  (image LEFT, info RIGHT)
-const Topproduct = ({ productImg, productTitle, productDesription, productPrice,}) => {
+// Topproduct (image LEFT, info RIGHT)
+const Topproduct = ({ productImg, productTitle, productDesription, productPrice }) => {
   return (
-    <div className="mt-35 px-5 border-2 border-white/10  rounded-[151px] bg-white/5 backdrop-blur-md relative ">
-      <div className="flex items-center justify-between">
+    <div className="mt-10 md:mt-20 lg:mt-35 px-4 md:px-8 lg:py-3 border-2 border-white/10 rounded-[60px] md:rounded-[100px] lg:rounded-[151px] bg-white/5 backdrop-blur-md relative">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
         {/* Image */}
-        <div className="w-500 ">
-          <Images imgSrc={productImg} className={"absolute bottom-5 left-5"} />
+        <div className="w-full md:w-[300px] lg:w-[500px] flex justify-center md:block">
+          <Images
+            imgSrc={productImg}
+            className={"md:absolute md:bottom-5 md:left-5 w-48 md:w-64 lg:w-auto "}
+          />
         </div>
         {/* Info */}
-        <div className="py-21 flex-1 ">
-          <h4 className="text-[38px] font-semibold">{productTitle}</h4>
-          <p className="text-[20px] w-[700px] py-6">{productDesription}</p>
-          <p className="text-[38px] font-semibold pb-6">{productPrice}</p>
-          <div className="flex gap-x-8">
-            <div>
-              <Button btnText={"Explore"} />
-            </div>
-            <div className="border-2 p-3.5 rounded-xl cursor-pointer">
+        <div className="py-8  md:py-14 lg:py-21 lg:pl-[180px] flex-1  md:text-left">
+          <h4 className="text-2xl md:text-3xl lg:text-[38px] font-semibold">{productTitle}</h4>
+          <p className="text-base md:text-lg lg:text-[20px]   py-4 md:py-6 ">
+            {productDesription}
+          </p>
+          <p className="text-2xl md:text-3xl lg:text-[38px] font-semibold pb-4 md:pb-6">{productPrice}</p>
+          <div className="flex gap-x-5 md:gap-x-8 justify-center md:justify-start">
+            <Button btnText={"Explore"} />
+            <div className="border-2 p-3 md:p-3.5 rounded-xl cursor-pointer">
               <IoBagHandleSharp />
             </div>
           </div>
@@ -46,28 +48,31 @@ const Topproduct = ({ productImg, productTitle, productDesription, productPrice,
 };
 
 
-//  Buttomproduct  (info LEFT, image RIGHT)
-const Buttomproduct = ({ productImg, productTitle, productDesription, productPrice ,className }) => {
+// Buttomproduct (info LEFT, image RIGHT)
+const Buttomproduct = ({ productImg, productTitle, productDesription, productPrice }) => {
   return (
-    <div className="mt-50 px-28 border-2 border-white/10 p-8 rounded-[151px] bg-white/5 backdrop-blur-md relative ">
-      <div className="flex items-center justify-between">
+    <div className="mt-10 md:mt-20 lg:mt-50 px-4 md:px-14 lg:px-28 border-2 border-white/10 p-6 md:p-8 rounded-[60px] md:rounded-[100px] lg:rounded-[151px] bg-white/5 backdrop-blur-md relative">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-0">
         {/* Info */}
-        <div className="py-15">
-          <h4 className="text-[38px] font-semibold">{productTitle}</h4>
-          <p className="text-[20px] w-[700px] py-6">{productDesription}</p>
-          <p className="text-[38px] font-semibold pb-6">{productPrice}</p>
-          <div className="flex gap-x-8">
-            <div>
-              <Button btnText={"Explore"} />
-            </div>
-            <div className="border-2 p-3.5 rounded-xl cursor-pointer">
+        <div className="py-6 md:py-10 lg:py-15 text-center md:text-left">
+          <h4 className="text-2xl md:text-3xl lg:text-[38px] font-semibold">{productTitle}</h4>
+          <p className="text-base md:text-lg lg:text-[20px] w-full max-w-[700px] py-4 md:py-6 mx-auto md:mx-0">
+            {productDesription}
+          </p>
+          <p className="text-2xl md:text-3xl lg:text-[38px] font-semibold pb-4 md:pb-6">{productPrice}</p>
+          <div className="flex gap-x-5 md:gap-x-8 justify-center md:justify-start">
+            <Button btnText={"Explore"} />
+            <div className="border-2 p-3 md:p-3.5 rounded-xl cursor-pointer">
               <IoBagHandleSharp />
             </div>
           </div>
         </div>
         {/* Image */}
-        <div className="w-[350px] ">
-          <Images imgSrc={productImg} className={"absolute bottom-5 right-20"} />
+        <div className="w-full md:w-[280px] lg:w-[350px] flex justify-center md:block">
+          <Images
+            imgSrc={productImg}
+            className={"md:absolute md:bottom-5 md:right-20 w-48 md:w-64 lg:w-auto object-contain"}
+          />
         </div>
       </div>
     </div>
@@ -75,7 +80,7 @@ const Buttomproduct = ({ productImg, productTitle, productDesription, productPri
 };
 
 
-//  Benner  (main component)
+// Benner (main component)
 const Benner = () => {
   return (
     <>
@@ -83,15 +88,15 @@ const Benner = () => {
         <Container>
 
           {/* ── Hero Text ── */}
-          <div className="pt-[171px]">
-            <h1 className="text-[118px] text-[#c6c8c5] font-semibold leading-none tracking-tight">
+          <div className="pt-16 md:pt-24 lg:pt-[171px]">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[118px] text-[#c6c8c5] font-semibold leading-none tracking-tight">
               Breath Natural
             </h1>
-            <p className="text-[#c6c8c5] text-2xl font-medium w-[880px] pb-5 opacity-90 leading-relaxed">
+            <p className="text-[#c6c8c5] text-base sm:text-lg md:text-xl lg:text-2xl font-medium w-full max-w-[880px] pb-5 opacity-90 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="flex items-center gap-x-9">
+            <div className="flex items-center gap-x-6 md:gap-x-9">
               <Button btnText={"Explore"} className={"text-[#c6c8c5]"} />
               <Link to={""} className="flex items-center gap-x-3 text-[#c6c8c5]">
                 <Images imgSrc={PlayBtn} />
@@ -100,43 +105,44 @@ const Benner = () => {
           </div>
 
           {/* ── Hero Cards Row ── */}
-          <div className="flex justify-between items-end mb-20 mt-40 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-20 mt-16 md:mt-28 lg:mt-40 gap-8 md:gap-6">
 
             {/* Review Card */}
-            <div className="mt-20 w-[409px] border-2 border-white/10 py-11 px-9 rounded-[45px] bg-white/5 backdrop-blur-md flex-shrink-0">
-              <div className="flex items-center gap-x-7 pb-7">
-                <Images imgSrc={ReveiwOne} className="w-[58px] h-[58px] rounded-full object-cover" />
+            <div className="w-full md:w-[409px] border-2 border-white/10 py-8 md:py-11 px-6 md:px-9 rounded-[35px] md:rounded-[45px] bg-white/5 backdrop-blur-md flex-shrink-0">
+              <div className="flex items-center gap-x-5 md:gap-x-7 pb-5 md:pb-7">
+                <Images
+                  imgSrc={ReveiwOne}
+                  className="w-[48px] h-[48px] md:w-[58px] md:h-[58px] rounded-full object-cover"
+                />
                 <div>
-                  <p className="text-[22px]">Zila</p>
+                  <p className="text-lg md:text-[22px]">Zila</p>
                   <Images imgSrc={Start} />
                 </div>
               </div>
-              <p className="opacity-75 font-light leading-relaxed">
+              <p className="opacity-75 font-light leading-relaxed text-sm md:text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt...
               </p>
             </div>
 
-            
-
             {/* Calathea Product Card */}
-            <div className="w-[370px] flex-shrink-0">
-              <Blurdiv className={"pt-56"}>
-                <div className="pl-8 relative">
+            <div className="w-full md:w-[370px] flex-shrink-0">
+              <Blurdiv className={"pt-32 md:pt-56"}>
+                <div className="pl-5 md:pl-8 relative">
                   <Images
                     imgSrc={Tree1}
-                    className={"absolute bottom-52 right-4 w-full object-contain"}
+                    className={"absolute bottom-40 md:bottom-52 right-2 md:right-4 w-full object-contain"}
                   />
-                  <p className="text-2xl font-light opacity-75">
+                  <p className="text-lg md:text-2xl font-light opacity-75">
                     Trendy House Plant
                   </p>
-                  <p className="opacity-75 text-[38px] my-5">Calathea plant</p>
-                  <div className="flex items-center justify-between pr-4">
+                  <p className="opacity-75 text-2xl md:text-[38px] my-3 md:my-5">Calathea plant</p>
+                  <div className="flex items-center justify-between pr-3 md:pr-4">
                     <Button btnText={"Buy Now"} />
                     <FaAngleRight />
                   </div>
                   {/* Slide dots */}
-                  <div className="flex gap-2 mt-5">
+                  <div className="flex gap-2 mt-4 md:mt-5">
                     <div className="w-6 h-[5px] rounded-full bg-white/70" />
                     <div className="w-3 h-[5px] rounded-full bg-white/25" />
                     <div className="w-3 h-[5px] rounded-full bg-white/25" />
@@ -151,19 +157,18 @@ const Benner = () => {
           <div className="mb-10">
 
             {/* Section Title */}
-            <div className="text-center mb-16 flex justify-center">
+            <div className="text-center mb-10 md:mb-16 flex justify-center">
               <div className="relative inline-block">
-                <div className="absolute top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-[#abffb369] rounded-tr-[20px]" />
-                <div className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-[#abffb3aa] rounded-bl-[20px]" />
-                <h2 className="text-[55px] font-semibold px-5">
+                <div className="absolute top-0 right-0 w-10 md:w-16 h-10 md:h-16 border-t-4 border-r-4 border-[#abffb369] rounded-tr-[20px]" />
+                <div className="absolute bottom-0 left-0 w-10 md:w-16 h-10 md:h-16 border-b-4 border-l-4 border-[#abffb3aa] rounded-bl-[20px]" />
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[55px] font-semibold px-5">
                   Our Trendy plants
                 </h2>
               </div>
             </div>
 
-            {/* Top Product — image left */}
+            {/* Top Product */}
             <Topproduct
-            
               productImg={Tree2}
               productTitle={"For Small Decs Ai Plat"}
               productDesription={
@@ -172,7 +177,7 @@ const Benner = () => {
               productPrice={"Rs. 599/-"}
             />
 
-            {/* Bottom Product — image right */}
+            {/* Bottom Product */}
             <Buttomproduct
               productImg={Tree3}
               productTitle={"For Fresh Decs Ai Plat"}
@@ -183,7 +188,7 @@ const Benner = () => {
             />
 
             {/* Slide dots */}
-            <div className="flex justify-center gap-2 mt-10">
+            <div className="flex justify-center gap-2 mt-8 md:mt-10">
               <div className="w-7 h-[6px] rounded-full bg-white/65" />
               <div className="w-[10px] h-[6px] rounded-full bg-white/25" />
               <div className="w-[10px] h-[6px] rounded-full bg-white/25" />
