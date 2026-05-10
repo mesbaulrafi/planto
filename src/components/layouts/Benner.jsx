@@ -88,7 +88,7 @@ const Benner = () => {
         <Container>
 
           {/* ── Hero Text ── */}
-          <div className="pt-16 md:pt-24 lg:pt-[171px]">
+          <div className="pt-26 md:pt-24 lg:pt-[171px]">
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[118px] text-[#c6c8c5] font-semibold leading-none tracking-tight">
               Breath Natural
             </h1>
@@ -108,11 +108,11 @@ const Benner = () => {
           <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-20 mt-16 md:mt-28 lg:mt-40 gap-8 md:gap-6">
 
             {/* Review Card */}
-            <div className="w-full md:w-[409px] border-2 border-white/10 py-8 md:py-11 px-6 md:px-9 rounded-[35px] md:rounded-[45px] bg-white/5 backdrop-blur-md flex-shrink-0">
+            <div className="w-full md:w-[409px] border-2 border-white/10 py-8 md:py-11 px-6 md:px-9 rounded-[35px] md:rounded-[45px] bg-white/5 backdrop-blur-md shrink-0">
               <div className="flex items-center gap-x-5 md:gap-x-7 pb-5 md:pb-7">
                 <Images
                   imgSrc={ReveiwOne}
-                  className="w-[48px] h-[48px] md:w-[58px] md:h-[58px] rounded-full object-cover"
+                  className="w-12 h-12 md:w-[58px] md:h-[58px] rounded-full object-cover"
                 />
                 <div>
                   <p className="text-lg md:text-[22px]">Zila</p>
@@ -126,12 +126,12 @@ const Benner = () => {
             </div>
 
             {/* Calathea Product Card */}
-            <div className="w-full md:w-[370px] flex-shrink-0">
-              <Blurdiv className={"pt-32 md:pt-56"}>
+            <div className=" py-20 lg:py-0 w-full md:w-[370px] shrink-0">
+              <Blurdiv className={"pt-40 md:pt-56"}>
                 <div className="pl-5 md:pl-8 relative">
                   <Images
                     imgSrc={Tree1}
-                    className={"absolute bottom-40 md:bottom-52 right-2 md:right-4 w-full object-contain"}
+                    className={"absolute bottom-45 md:bottom-52 right-2 md:right-4 w-full object-contain"}
                   />
                   <p className="text-lg md:text-2xl font-light opacity-75">
                     Trendy House Plant
@@ -189,9 +189,9 @@ const Benner = () => {
 
             {/* Slide dots */}
             <div className="flex justify-center gap-2 mt-8 md:mt-10">
-              <div className="w-7 h-[6px] rounded-full bg-white/65" />
-              <div className="w-[10px] h-[6px] rounded-full bg-white/25" />
-              <div className="w-[10px] h-[6px] rounded-full bg-white/25" />
+              <div className="w-7 h-1.5 rounded-full bg-white/65" />
+              <div className="w-2.5 h-1.5 rounded-full bg-white/25" />
+              <div className="w-2.5 h-1.5 rounded-full bg-white/25" />
             </div>
 
           </div>

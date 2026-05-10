@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           {/* 2 - Quick Links */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <h4 className='pb-8 md:pb-12 text-xl md:text-2xl font-extrabold text-white'>Quick Link's</h4>
             <ul>
               <Link to={'/'}><li className='text-lg md:text-2xl text-white pb-5 md:pb-6.5'>Home</li></Link>
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
 
           {/* 3 - Subscribe + Copyright */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <h4 className='pb-8 md:pb-12 text-xl md:text-2xl font-extrabold text-white'>For Every Update.</h4>
             <div className="flex items-center justify-between border border-white rounded-lg p-1.5 w-full max-w-[450px]">
               <input
