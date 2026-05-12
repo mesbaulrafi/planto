@@ -10,12 +10,13 @@ import PT3 from "/src/assets/pt3.png";
 import PT4 from "/src/assets/pt4.png";
 import PT5 from "/src/assets/pt5.png";
 import PT6 from "/src/assets/pt6.png";
-
+import ReveiewCard from "../ReveiewCard";
+import ReveiwOne from "/src/assets/reviewImg1.png";
 
 const More = () => {
   return (
     <>
-    <Container className={"py-10"}>
+      <Container className={"py-10"}>
         <div className="">
           {/* Our Top Selling Heading */}
           <div className="py-10 sm:py-17.5 text-center flex justify-center">
@@ -35,7 +36,12 @@ const More = () => {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
                 {/* Image */}
                 <div className="w-full lg:w-auto flex justify-center">
-                  <Images imgSrc={PlTree1} className={"max-w-[300px] sm:max-w-[400px] lg:max-w-none w-full"} />
+                  <Images
+                    imgSrc={PlTree1}
+                    className={
+                      "max-w-[300px] sm:max-w-[400px] lg:max-w-none w-full"
+                    }
+                  />
                 </div>
                 {/* Text */}
                 <div className="w-full lg:w-[610px]">
@@ -60,53 +66,85 @@ const More = () => {
             </div>
             {/* Product Details End */}
 
-            {/* Top Selling Product Part */}
-            <div className="py-20 sm:py-40">
+            {/*Customer Review Heading */}
+            <div className="pt-5  sm:py-17.5 text-center flex justify-center">
+              <div className="relative inline-block">
+                <div className="absolute top-0 right-0 w-10 h-10 sm:w-16 sm:h-16 border-t-4 border-r-4 border-[#abffb369] rounded-tr-[20px]"></div>
+                <div className="absolute bottom-0 left-0 w-10 h-10 sm:w-16 sm:h-16 border-b-4 border-l-4 border-[#abffb3aa] rounded-bl-[20px]"></div>
+                <h2 className="text-[32px] sm:text-[42px] lg:text-[55px] font-semibold px-5">
+                  Customer Review
+                </h2>
+              </div>
+            </div>
+            {/*  Customer Review Heading End */}
+            {/* Customer Review Part */}
+            <div className="py-5 sm:py-10">
               <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-between gap-y-32 sm:gap-y-16 gap-x-4">
-                <Product
-                  productImg={PT1}
-                  productTitle={"Calathea plant"}
-                  productDesription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
-                  productPrice={"Rs. 359/-"}
+                <ReveiewCard
+                reveiewImg={ReveiwOne}
+                  reveiewTitle={"Rohim"}
+                  reveiewText={
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem itaque ipsa accusantium deleniti sapiente dolore minus quis molestiae aut labore!"
+                  }
                 />
-                <Product
-                  productImg={PT2}
-                  productTitle={"Calathea plant"}
-                  productDesription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
-                  productPrice={"Rs. 359/-"}
+                <ReveiewCard
+                reveiewImg={ReveiwOne}
+                  reveiewTitle={"Korim"}
+                  reveiewText={
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem itaque ipsa accusantium deleniti sapiente dolore minus quis molestiae aut labore!"
+                  }
                 />
-                <Product
-                  productImg={PT3}
-                  productTitle={"Calathea plant"}
-                  productDesription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
-                  productPrice={"Rs. 359/-"}
-                />
-                <Product
-                  productImg={PT4}
-                  productTitle={"Calathea plant"}
-                  productDesription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
-                  productPrice={"Rs. 359/-"}
-                />
-                <Product
-                  productImg={PT5}
-                  productTitle={"Calathea plant"}
-                  productDesription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
-                  productPrice={"Rs. 359/-"}
-                />
-                <Product
-                  productImg={PT6}
-                  productTitle={"Calathea plant"}
-                  productDesription={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
-                  productPrice={"Rs. 359/-"}
+                <ReveiewCard
+                reveiewImg={ReveiwOne}
+                  reveiewTitle={"Selim"}
+                  reveiewText={
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem itaque ipsa accusantium deleniti sapiente dolore minus quis molestiae aut labore!"
+                  }
                 />
               </div>
             </div>
-            {/* Top Selling Product Part End */}
+            {/* Customer Review Part End */}
+
+            {/*Trusted Company  Heading */}
+            <div className="pt-5  sm:py-17.5 text-center flex justify-center">
+              <div className="relative inline-block">
+                <div className="absolute top-0 right-0 w-10 h-10 sm:w-16 sm:h-16 border-t-4 border-r-4 border-[#abffb369] rounded-tr-[20px]"></div>
+                <div className="absolute bottom-0 left-0 w-10 h-10 sm:w-16 sm:h-16 border-b-4 border-l-4 border-[#abffb3aa] rounded-bl-[20px]"></div>
+                <h2 className="text-[32px] sm:text-[42px] lg:text-[55px] font-semibold px-5">
+                  Trusted Company 
+                </h2>
+              </div>
+            </div>
+            {/*  Trusted Company  Heading End */}
+            {/* Trusted Company  Part */}
+            <div className="py-5 sm:py-10">
+              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-between gap-y-32 sm:gap-y-16 gap-x-4">
+                <ReveiewCard
+                  reveiewTitle={"Rohim"}
+                  reveiewText={
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem itaque ipsa accusantium deleniti sapiente dolore minus quis molestiae aut labore!"
+                  }
+                />
+                <ReveiewCard
+                  reveiewTitle={"Korim"}
+                  reveiewText={
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem itaque ipsa accusantium deleniti sapiente dolore minus quis molestiae aut labore!"
+                  }
+                />
+                <ReveiewCard
+                  reveiewTitle={"Selim"}
+                  reveiewText={
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem itaque ipsa accusantium deleniti sapiente dolore minus quis molestiae aut labore!"
+                  }
+                />
+              </div>
+            </div>
+            {/* Trusted Company  Part End */}
           </div>
         </div>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default More
+export default More;
