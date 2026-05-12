@@ -12,7 +12,7 @@ const Product = ({
   return (
     <div className="flex flex-col items-center w-full sm:w-[48%] lg:w-[30%]">
       {/* Text Part  */}
-      <div className="mt-20 sm:mt-25 border-2 border-white/10 p-5 sm:p-8 rounded-[35px] sm:rounded-[45px] bg-white/5 backdrop-blur-[5px] w-full max-w-[450px] h-auto sm:h-[630px] lg:h-[500px] flex flex-col justify-end relative [clip-path:polygon(100%_0,100%_100%,0_100%,0_0,50%_5%)]">
+      <div className="mt-20 sm:mt-25 border-2 border-white/10 p-5 sm:p-8 rounded-[35px] sm:rounded-[45px] bg-white/5 backdrop-blur-[5px] w-full max-w-[450px] h-[330px] sm:h-[630px] lg:h-[500px] flex flex-col justify-end relative [clip-path:polygon(51%_7%,85%_0,100%_0,100%_100%,0_100%,0_0,15%_0)] ">
         <div className="">
           <h5 className="opacity-75 text-[24px] sm:text-[30px] lg:text-[38px] my-3  sm:my-5">{productTitle}</h5>
           <p className="opacity-75 text-lg sm:text-xl lg:text-2xl py-5 sm:py-9 lg:py-4">{productDesription}</p>
