@@ -9,6 +9,7 @@ import About from "./components/pages/About";
 import Error from "./components/pages/Error";
 import PlantsType from "./components/pages/PlantsType";
 import Contact from "./components/pages/Contact";
+import More from "./components/pages/More";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<RootLayouts />}>
           <Route index element={<Home />} />
           <Route path="/plantsType" element={<PlantsType />} />
+          <Route path="/more" element={<More />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Route>
