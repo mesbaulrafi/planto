@@ -188,11 +188,7 @@ const Benner = () => {
             />
 
             {/* Slide dots */}
-            <div className="flex justify-center gap-2 mt-8 md:mt-10">
-              <div className="w-7 h-1.5 rounded-full bg-white/65" />
-              <div className="w-2.5 h-1.5 rounded-full bg-white/25" />
-              <div className="w-2.5 h-1.5 rounded-full bg-white/25" />
-            </div>
+            
 
           </div>
         </Container>
