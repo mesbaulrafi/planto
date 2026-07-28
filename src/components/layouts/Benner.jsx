@@ -104,7 +104,7 @@ const Benner = () => {
             </div>
           </div>
 
-          {/* ── Hero Cards Row ── */}
+          {/* Hero Cards  */}
           <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-20 mt-16 md:mt-28 lg:mt-40 gap-8 md:gap-6">
 
             {/* Review Card */}
