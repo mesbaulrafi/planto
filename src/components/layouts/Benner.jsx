@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa6";
 import { IoBagHandleSharp } from "react-icons/io5";
@@ -82,6 +82,56 @@ const Buttomproduct = ({ productImg, productTitle, productDesription, productPri
 
 // Benner (main component)
 const Benner = () => {
+  const [activePage, setActivePage] = useState(0);
+
+  const trendyProducts = [
+    {
+      id: 1,
+      type: "top",
+      productImg: Tree2,
+      productTitle: "For Small Decs Ai Plat",
+      productDesription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      productPrice: "Rs. 599/-",
+    },
+    {
+      id: 2,
+      type: "bottom",
+      productImg: Tree3,
+      productTitle: "For Fresh Decs Ai Plat",
+      productDesription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      productPrice: "Rs. 579/-",
+    },
+  ];
+
+  const currentProduct = trendyProducts[activePage];
+
+  const [activeHeroPage, setActiveHeroPage] = useState(0);
+
+  const heroProducts = [
+    {
+      id: 1,
+      productImg: Tree1,
+      productSubtitle: "Trendy House Plant",
+      productTitle: "Calathea plant",
+    },
+    {
+      id: 2,
+      productImg: Tree2,
+      productSubtitle: "Trendy House Plant",
+      productTitle: "Small Deco plant",
+    },
+    {
+      id: 3,
+      productImg: Tree3,
+      productSubtitle: "Trendy House Plant",
+      productTitle: "Fresh Deco plant",
+    },
+  ];
+
+  const currentHeroProduct = heroProducts[activeHeroPage];
+
   return (
     <>
       <div className="bg-[url('/src/assets/bg_home.png')] bg-center bg-cover bg-no-repeat py-5">
@@ -130,22 +180,34 @@ const Benner = () => {
               <Blurdiv className={"pt-40 md:pt-56"}>
                 <div className="pl-5 md:pl-8 relative">
                   <Images
-                    imgSrc={Tree1}
+                    imgSrc={currentHeroProduct.productImg}
                     className={"absolute bottom-45 md:bottom-52 right-2 md:right-4 w-full object-contain"}
                   />
                   <p className="text-lg md:text-2xl font-light opacity-75">
-                    Trendy House Plant
+                    {currentHeroProduct.productSubtitle}
                   </p>
-                  <p className="opacity-75 text-2xl md:text-[38px] my-3 md:my-5">Calathea plant</p>
+                  <p className="opacity-75 text-2xl md:text-[38px] my-3 md:my-5">
+                    {currentHeroProduct.productTitle}
+                  </p>
                   <div className="flex items-center justify-between pr-3 md:pr-4">
                     <Button btnText={"Buy Now"} />
                     <FaAngleRight />
                   </div>
                   {/* Slide dots */}
                   <div className="flex gap-2 mt-4 md:mt-5">
-                    <div className="w-6 h-[5px] rounded-full bg-white/70" />
-                    <div className="w-3 h-[5px] rounded-full bg-white/25" />
-                    <div className="w-3 h-[5px] rounded-full bg-white/25" />
+                    {heroProducts.map((_, index) => (
+                      <button
+                        key={index}
+                        type="button"
+                        onClick={() => setActiveHeroPage(index)}
+                        className={`h-[5px] rounded-full transition-all duration-300 ${
+                          activeHeroPage === index
+                            ? "w-6 bg-white/70"
+                            : "w-3 bg-white/25 hover:bg-white/40"
+                        }`}
+                        aria-label={`Slide ${index + 1}`}
+                      />
+                    ))}
                   </div>
                 </div>
               </Blurdiv>
@@ -167,31 +229,38 @@ const Benner = () => {
               </div>
             </div>
 
-            {/* Top Product */}
-            <Topproduct
-              productImg={Tree2}
-              productTitle={"For Small Decs Ai Plat"}
-              productDesription={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-              }
-              productPrice={"Rs. 599/-"}
-            />
+            {/* Current Product (Top or Bottom layout depending on type) */}
+            {currentProduct.type === "top" ? (
+              <Topproduct
+                productImg={currentProduct.productImg}
+                productTitle={currentProduct.productTitle}
+                productDesription={currentProduct.productDesription}
+                productPrice={currentProduct.productPrice}
+              />
+            ) : (
+              <Buttomproduct
+                productImg={currentProduct.productImg}
+                productTitle={currentProduct.productTitle}
+                productDesription={currentProduct.productDesription}
+                productPrice={currentProduct.productPrice}
+              />
+            )}
 
-            {/* Bottom Product */}
-            <Buttomproduct
-              productImg={Tree3}
-              productTitle={"For Fresh Decs Ai Plat"}
-              productDesription={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-              }
-              productPrice={"Rs. 579/-"}
-            />
-
-            {/* Slide dots */}
-            <div className="flex justify-center gap-2 mt-8 md:mt-10">
-              <div className="w-7 h-1.5 rounded-full bg-white/65" />
-              <div className="w-2.5 h-1.5 rounded-full bg-white/25" />
-              <div className="w-2.5 h-1.5 rounded-full bg-white/25" />
+            {/* Pagination dots */}
+            <div className="flex justify-center gap-3 mt-8 md:mt-10">
+              {trendyProducts.map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => setActivePage(index)}
+                  className={`h-1.5 md:h-2 rounded-full transition-all duration-300 ${
+                    activePage === index
+                      ? "w-7 md:w-8 bg-white/70"
+                      : "w-2.5 md:w-3 bg-white/25 hover:bg-white/40"
+                  }`}
+                  aria-label={`Slide ${index + 1}`}
+                />
+              ))}
             </div>
 
           </div>
