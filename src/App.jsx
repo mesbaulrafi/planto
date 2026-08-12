@@ -22,6 +22,7 @@ function App() {
           <Route path="/plantsType" element={<PlantsType />} />
           <Route path="/more" element={<More />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
