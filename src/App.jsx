@@ -1,32 +1,45 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { lazy, Suspense } from "react";
 import "./App.css";
 import RootLayouts from "./components/layouts/RootLayouts";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Error from "./components/pages/Error";
-import PlantsType from "./components/pages/PlantsType";
-import Contact from "./components/pages/Contact";
-import More from "./components/pages/More";
+import Loader from "./components/Loader";
+
+const lazyLoad = (component) => {
+  return lazy(() => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(component());
+      }, 3000);
+    });
+  });
+};
+
+const Home = lazyLoad(() => import("./components/pages/Home"));
+const About = lazyLoad(() => import("./components/pages/About"));
+const Error = lazyLoad(() => import("./components/pages/Error"));
+const PlantsType = lazyLoad(() => import("./components/pages/PlantsType"));
+const Contact = lazyLoad(() => import("./components/pages/Contact"));
+const More = lazyLoad(() => import("./components/pages/More"));
+
+
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<RootLayouts />}>
           <Route index element={<Home />} />
-          <Route path="/plantsType" element={<PlantsType />} />
-          <Route path="/more" element={<More />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
+          <Route path="plantsType" element={<PlantsType />} />
+          <Route path="more" element={<More />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
-    </>
+    </Suspense>
   );
 }
 
