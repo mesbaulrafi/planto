@@ -56,10 +56,10 @@ const stats = [
 
 const About = () => {
   return (
-    <div className="pb-10">
+    <div className="pb-5">
       {/* Hero */}
-      <div className="bg-[url('/src/assets/bg_home.png')] bg-center bg-cover bg-no-repeat py-5">
-        <Container className={"pt-40 sm:pt-48 lg:pt-[200px] pb-16 sm:pb-24"}>
+      <div className="bg-[url('/src/assets/bg_home.png')] bg-center bg-cover bg-no-repeat py-1">
+        <Container className={"pt-40 sm:pt-48 lg:pt-[100px] pb-16 sm:pb-24"}>
           <div className="text-center max-w-[820px] mx-auto">
             <p className="text-[#abffb3] text-base sm:text-lg tracking-wide uppercase opacity-80 pb-4">
               About Planto

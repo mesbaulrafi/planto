@@ -34,7 +34,7 @@ const PlantsType = () => {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
                 {/* Image */}
                 <div className="w-full lg:w-auto flex justify-center">
-                  <Images imgSrc={PlTree1} className={"max-w-[300px] sm:max-w-[400px] lg:max-w-none w-full"} />
+                  <Images imgSrc={PlTree1} className={"max-w-[200px] sm:max-w-[200px] lg:max-w-none w-full"} />
                 </div>
                 {/* Text */}
                 <div className="w-full lg:w-[610px]">
