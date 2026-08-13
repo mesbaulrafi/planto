@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section className="py-20 bg-[#0d110d]  flex flex-col items-center">
       <div className="container mx-auto px-4">
-        <h2 className='font-inter font-semibold text-[48px] text-center pb-16 text-white'>
+        <h2 className='font-inter font-semibold text-[48px] text-center pb-10 text-white'>
           Contact Us
         </h2>
         
@@ -35,7 +35,7 @@ const Contact = () => {
           
           {/* Submit Button Centering */}
           <div className="flex justify-center mt-2">
-             <button className='bg-[#373d32] text-white text-4xl font-bold rounded-[40px]  backdrop-blur-[5px] py-4 px-[70px]'>Submit</button>
+             <button className='bg-[#373d32] text-white text-2xl font-semibold rounded-[40px]  backdrop-blur-[5px] py-4 px-[150px] cursor-pointer hover:bg-[#455637] duration-300'>Submit</button>
           </div>
         </Blurdiv>
       </div>
