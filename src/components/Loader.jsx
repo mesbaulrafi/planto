@@ -8,8 +8,8 @@ const PlantoLoader = () => {
         @keyframes planto-float { 0%, 100% { transform: translateY(0px); opacity: 0.25; } 50% { transform: translateY(-18px); opacity: 0.55; } }
         @keyframes planto-pulse { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.15); opacity: 1; } }
         /* grows up once per loop, holds fully grown, then snaps back instantly (no animated shrink) as the next loop starts */
-        @keyframes planto-grow { 0% { stroke-dashoffset: 110; } 60% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; } }
-        @keyframes planto-unfurl { 0%, 25% { opacity: 0; transform: scale(0.2) rotate(-10deg); } 55%, 100% { opacity: 1; transform: scale(1) rotate(0deg); } }
+        @keyframes planto-grow { 0% { stroke-dashoffset: 110; } 75% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; } }
+        @keyframes planto-unfurl { 0%, 20% { opacity: 0; transform: scale(0.2) rotate(-10deg); } 65%, 100% { opacity: 1; transform: scale(1) rotate(0deg); } }
         @keyframes planto-blink { 0%, 20% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; } }
         @media (prefers-reduced-motion: reduce) {
           .planto-anim { animation: none !important; }
@@ -37,7 +37,7 @@ const PlantoLoader = () => {
 
             {/* stem draws itself upward, loops */}
             <path
-              className="planto-anim animate-[planto-grow_1.5s_ease-in-out_infinite] [stroke-dasharray:110] [stroke-dashoffset:110]"
+              className="planto-anim animate-[planto-grow_3s_ease-in-out_infinite] [stroke-dasharray:110] [stroke-dashoffset:110]"
               d="M80 118 C 80 96, 80 84, 80 50"
               stroke="#2d6a4f"
               strokeWidth="5"
@@ -47,18 +47,18 @@ const PlantoLoader = () => {
 
             {/* leaves unfurl after the stem grows */}
             <path
-              className="planto-anim origin-[78px_96px] animate-[planto-unfurl_1.5s_ease-in-out_infinite] opacity-0 [animation-delay:0.5s]"
+              className="planto-anim origin-[78px_96px] animate-[planto-unfurl_2s_ease-in-out_infinite] opacity-0 [animation-delay:0.7s]"
               d="M80 96 C 62 92, 54 78, 62 66 C 74 72, 80 84, 80 96 Z"
               fill="#52b788"
             />
             <path
-              className="planto-anim origin-[82px_84px] animate-[planto-unfurl_1.5s_ease-in-out_infinite] opacity-0 [animation-delay:0.65s]"
+              className="planto-anim origin-[82px_84px] animate-[planto-unfurl_2s_ease-in-out_infinite] opacity-0 [animation-delay:0.9s]"
               d="M80 84 C 98 78, 104 64, 96 54 C 86 62, 80 74, 80 84 Z"
               fill="#52b788"
             />
             {/* top leaf — unfurls last, right at the growing tip */}
             <path
-              className="planto-anim origin-[80px_54px] animate-[planto-unfurl_1.5s_ease-in-out_infinite] opacity-0 [animation-delay:0.78s]"
+              className="planto-anim origin-[80px_54px] animate-[planto-unfurl_2s_ease-in-out_infinite] opacity-0 [animation-delay:1.05s]"
               d="M80 54 C 68 48, 64 34, 74 24 C 84 32, 88 46, 80 54 Z"
               fill="#74c69d"
             />

@@ -9,7 +9,7 @@ const lazyLoad = (component) => {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(component());
-      }, 3000);
+      }, 2000);
     });
   });
 };
