@@ -13,7 +13,7 @@ const Error = () => {
         {/* Plant Animated Graphic / Badge */}
         <div className="relative w-32 h-32 mx-auto flex items-center justify-center bg-emerald-100 rounded-full text-emerald-600">
           <Leaf className="w-16 h-16 animate-bounce" />
-          <span className="absolute -top-2 -right-2 bg-emerald-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+          <span className="absolute -top-2 -right-2 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
             Lost in the garden
           </span>
         </div>
