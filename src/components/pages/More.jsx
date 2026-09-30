@@ -3,13 +3,7 @@ import Container from "../Container";
 import Images from "../Images";
 import PlTree1 from "/src/assets/plTee1.png";
 import Button from "../Button";
-import Product from "../Product";
-import PT1 from "/src/assets/tree1.png";
-import PT2 from "/src/assets/tree2.png";
-import PT3 from "/src/assets/pt3.png";
-import PT4 from "/src/assets/pt4.png";
-import PT5 from "/src/assets/pt5.png";
-import PT6 from "/src/assets/pt6.png";
+
 import ReveiewCard from "../ReveiewCard";
 import ReveiwOne from "/src/assets/reviewImg1.png";
 
