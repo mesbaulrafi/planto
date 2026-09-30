@@ -35,7 +35,7 @@ const Error = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <button
             onClick={() => navigate('/')}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-xl transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-700 hover:bg-emerald-700 text-white font-medium rounded-xl transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
           >
             <Home className="w-4 h-4" />
             Back to Home
@@ -43,7 +43,7 @@ const Error = () => {
           
           <button
             onClick={() => navigate(-1)}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-emerald-50 text-emerald-700 font-medium rounded-xl border border-emerald-200 transition-all duration-200 cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-emerald-50 text-emerald-600 font-medium rounded-xl border border-emerald-200 transition-all duration-200 cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             Go Back
